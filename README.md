@@ -12,9 +12,9 @@ Installed Nginx
 **Step 1: Add Ondrej PHP PPA repository**
 PHP can be installed using Ondřej Surý PPA, so install the software-properties-common package, add the ondrej PPA and update your sources using the following commands:
 
-_sudo apt-get install software-properties-common
-sudo add-apt-repository -y ppa:ondrej/php
-sudo apt update_
+**_sudo apt-get install software-properties-common**
+**sudo add-apt-repository -y ppa:ondrej/php**
+**sudo apt update_**
 
 ![image](https://github.com/ntnguyen147/Install_LEMP_STACK/assets/39340621/92a80a74-3166-4200-8b2e-2ec4787c2cea)
 
@@ -22,10 +22,10 @@ sudo apt update_
 **Step 2: Install PHP 7.3-FPM/PHP 7.4-FPM For Nginx****
 Install PHP 7.3-FPM on Ubuntu using the following command:
 
-_sudo apt install php7.3-fpm_
+**_sudo apt install php7.3-fpm_**
 
 or
-_sudo apt install php7.4-fpm_
+**_sudo apt install php7.4-fpm_**
 
 ![image](https://github.com/ntnguyen147/Install_LEMP_STACK/assets/39340621/1e640373-7ae0-40e1-a437-3a9a2243342a)
 **
@@ -50,14 +50,14 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 
 **Step 4: Install PHP Extensions**
 Install the most commonly used PHP extensions using the following command for PHP 7.3:
-
-_sudo apt install php7.3-common php7.3-zip php7.3-curl php7.3-xml php7.3-xmlrpc php7.3-json php7.3-mysql php7.3-pdo php7.3-gd php7.3-imagick php7.3-ldap php7.3-imap php7.3-mbstring php7.3-intl php7.3-cli php7.3-tidy php7.3-bcmath php7.3-opcache
+**
+_sudo apt install php7.3-common php7.3-zip php7.3-curl php7.3-xml php7.3-xmlrpc php7.3-json php7.3-mysql php7.3-pdo php7.3-gd php7.3-imagick php7.3-ldap php7.3-imap php7.3-mbstring php7.3-intl php7.3-cli php7.3-tidy php7.3-bcmath php7.3-opcache**
 
 
 **or for PHP 7.4, run the following one._**
 
-_
-sudo apt install php7.4-common php7.4-zip php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-json php7.4-mysql php7.4-pdo php7.4-gd php7.4-imagick php7.4-ldap php7.4-imap php7.4-mbstring php7.4-intl php7.4-cli php7.4-tidy php7.4-bcmath php7.4-opcache_
+**_
+sudo apt install php7.4-common php7.4-zip php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-json php7.4-mysql php7.4-pdo php7.4-gd php7.4-imagick php7.4-ldap php7.4-imap php7.4-mbstring php7.4-intl php7.4-cli php7.4-tidy php7.4-bcmath php7.4-opcache_**
 
 You can confirm the installed version of any PHP extension using apt policy command i.e. apt policy php7.3-cli and output will be
 
@@ -88,7 +88,7 @@ sudo nano /etc/php/7.4/fpm/php.ini_
 Make the changes on the following below lines in opened file and save. Below are recommended values being great settings to apply in your environments.
 
 
-_max_execution_time = 180
+**_max_execution_time = 180
 max_input_time = 360
 max_input_vars = 5000
 memory_limit = 256M
@@ -96,12 +96,12 @@ cgi.fix_pathinfo = 0
 file_uploads = On
 post_max_size = 192M
 upload_max_filesize = 96M
-allow_url_fopen = On_
+allow_url_fopen = On_**
 
 
 After making the change above, save the file and close out.
-
-Step 6: Restart PHP-FPM and Nginx
+**
+**Step 6: Restart PHP-FPM and Nginx****
 After installing PHP and related modules, all you have to do is restart PHP-FPM and Nginx to reload PHP configurations.
 
 To restart Nginx and PHP-FPM, run the commands below
