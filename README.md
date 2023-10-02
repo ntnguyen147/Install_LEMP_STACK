@@ -52,7 +52,9 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 Install the most commonly used PHP extensions using the following command for PHP 7.3:
 
 _sudo apt install php7.3-common php7.3-zip php7.3-curl php7.3-xml php7.3-xmlrpc php7.3-json php7.3-mysql php7.3-pdo php7.3-gd php7.3-imagick php7.3-ldap php7.3-imap php7.3-mbstring php7.3-intl php7.3-cli php7.3-tidy php7.3-bcmath php7.3-opcache
-or for PHP 7.4, run the following one._
+
+
+**or for PHP 7.4, run the following one._**
 
 _
 sudo apt install php7.4-common php7.4-zip php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-json php7.4-mysql php7.4-pdo php7.4-gd php7.4-imagick php7.4-ldap php7.4-imap php7.4-mbstring php7.4-intl php7.4-cli php7.4-tidy php7.4-bcmath php7.4-opcache_
